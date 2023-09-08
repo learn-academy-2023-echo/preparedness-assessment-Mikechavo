@@ -1,0 +1,23 @@
+.background-image {
+  background-size: cover;
+  background-size: cover; /* Adjust the size as needed */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh; 
+}
+
+h1 {
+  color: white;
+  font-size: 50px;
+  text-align: center;
+  
+}
+
+.label {
+  color: white;
+  font-size: 35px;
+  text-align: center;
+  /* fix something here */
+}
+
+
