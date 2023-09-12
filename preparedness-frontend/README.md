@@ -36,3 +36,45 @@ Frontend Styling Acceptance Criteria
 [x]There is 20px between the two buttons
 [x]There is 20px between the bottom of the input and the top of the buttons
 
+
+Backend Assessment 
+[x]Go to dbdiagram and create a free personal account
+[x]Start a new diagram
+[x]Enter the following code into the left side bar to create the base structure for three models
+[x]A free account will allow you to create 10 diagrams so explore different options
+
+[x]Add foreign keys to create relationships between models
+[x]Use the following example from the syllabus section for creating relationships between a model called owner and a model called credit_card
+[x]The foreign key and the ref will create a visual connection between models
+
+Table person {
+  id integer
+  created_at timestamp
+  updated_at timestamp
+}
+Table owner {
+  id integer
+  created_at timestamp
+  updated_at timestamp
+}
+
+Table credit_cards {
+  id integer [primary key]
+  owner_id integer [ref: > owner.id]
+  created_at timestamp
+  updated_at timestamp
+}
+
+Table car {
+  id integer [primary key]
+  owner_id integer [ref: > person.id]
+  created_at timestamp
+  updated_at timestamp
+}
+
+Table house {
+  id integer [primary key]
+  owner_id integer [ref: > person.id]
+  created_at timestamp
+  updated_at timestamp
+}
