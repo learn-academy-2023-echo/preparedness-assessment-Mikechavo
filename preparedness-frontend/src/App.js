@@ -5,7 +5,13 @@ import "./App.css"
 
 import background from "./assets/background-image.jpeg"
 
-
+//imported bootstrap/reactstrap Modal after running 
+// - yarn add bootstrap
+// - yarn add reactstrap
+// added to index.js - import "bootstrap/dist/css/bootstrap.min.css"
+// Placed reactstrap components in the correct places. (imported Modal&reactstrap)
+// needed to create usestate for the userinput field, onChange (e)
+// created a usestate for the modal to appear using a toggle function, !modal
 
 
 
@@ -18,6 +24,8 @@ const App = (args) => {
 
 
 // Modal useState
+//imodal, if modal is true it becomes false, and if modal is false it becomes true
+//when toggle is called upon, the variable will toggle between true and false. For showing or hiding the modal dialog
   const toggle = () => setModal(!modal)
 
  
